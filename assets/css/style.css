@@ -36,8 +36,13 @@
 /*----------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Federo&display=swap");
 :root {
-  --tp-theme-color: #0057FC;
-  --tp-primary-color: #0057FC;
+  --tp-theme-color: #FFCF4E;
+  --tp-primary-color: #073D30;
+  --tp-primary-color-2: #055C4D;
+  --tp-secondary-color: #FE4E15;
+  --tp-pink-color: #FF73AE;
+  --tp-white-color: #FFFFFF;
+  --tp-black-color: #000;
 }
 
 :root {
@@ -331,6 +336,24 @@ img {
 
 .p-absolute {
   position: absolute;
+}
+
+.bg-white {
+  background-color: var(--tp-white-color);
+}
+
+.bg-black {
+  background-color: var(--tp-black-color);
+}
+
+.tp-header-transparent {
+  position: absolute;
+  top: 26px;
+  left: 0;
+  right: 0;
+}
+.tp-header-logo {
+  background-color: var(--tp-primary-color);
 }
 
 /*# sourceMappingURL=style.css.map */

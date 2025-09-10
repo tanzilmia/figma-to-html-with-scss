@@ -1,1 +1,16 @@
 @use '../../utils/' as *;
+
+.tp-header {
+    &-transparent {
+        position: absolute;
+        top: 26px;
+        left: 0;
+        right: 0;
+    }
+
+    &-logo {
+        background-color: var(--tp-primary-color);
+    }
+
+
+}
