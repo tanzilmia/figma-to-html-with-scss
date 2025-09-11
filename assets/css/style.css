@@ -346,6 +346,15 @@ img {
   background-color: var(--tp-black-color);
 }
 
+.tp-header-container {
+  max-width: 1424px;
+}
+.tp-header-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .tp-header-transparent {
   position: absolute;
   top: 26px;
@@ -363,6 +372,7 @@ img {
   text-align: center;
   background-color: var(--tp-primary-color);
   padding: 16px 10px;
+  flex: 0 0 auto;
 }
 .tp-header-logo-shape {
   position: relative;
@@ -426,6 +436,10 @@ img {
 .tp-header-menu ul li .sub-menu li .sub-menu {
   left: 100%;
   top: 0;
+}
+.tp-header-right {
+  display: flex;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

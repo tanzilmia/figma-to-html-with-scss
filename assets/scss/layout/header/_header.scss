@@ -1,6 +1,17 @@
 @use '../../utils/' as *;
 
 .tp-header {
+    &-container {
+        max-width: 1424px;
+    }
+
+    &-content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     &-transparent {
         position: absolute;
         top: 26px;
@@ -20,6 +31,7 @@
             text-align: center;
             background-color: var(--tp-primary-color);
             padding: 16px 10px;
+            flex: 0 0 auto;
         }
 
         &-shape {
@@ -101,5 +113,14 @@
             }
         }
     }
+
+    &-right {
+        display: flex;
+        align-items: center;
+
+    }
+
+    // video end in 1.43 mins
+
 
 }
