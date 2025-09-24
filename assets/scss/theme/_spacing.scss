@@ -1,1 +1,10 @@
 @use '../utils/' as *;
+
+@for $i from 1 through 100 {
+    .ml-#{5 * $i} {
+        margin-left: 5px * $i;
+    }
+
+}
+
+// hero section class 11 : web design batch - 02, video end on 14 mins

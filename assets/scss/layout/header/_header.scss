@@ -5,11 +5,13 @@
         max-width: 1424px;
     }
 
+    &-bg {
+        padding-right: 5px;
+        border-radius: 12px;
+    }
+
     &-content {
         width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
 
     &-transparent {
@@ -19,36 +21,31 @@
         right: 0;
     }
 
-    &-row {
-        display: flex;
-    }
+    &-row {}
 
     &-logo {
-        background-color: var(--tp-primary-color);
+        position: absolute;
+        z-index: 1;
 
         &-box {
             width: 200px;
             text-align: center;
-            background-color: var(--tp-primary-color);
-            padding: 16px 10px;
             flex: 0 0 auto;
+            border-radius: 12px 0 0 12px;
         }
 
         &-shape {
             position: relative;
 
-            &:after {
-                content: '';
-                width: 0px;
-                height: 0px;
-                border-style: solid;
-                border-width: 35.5px 0 35.5px 21px;
-                border-color: transparent transparent transparent var(--tp-primary-color);
-                transform: rotate(0deg);
+            & svg {
                 position: absolute;
+                left: 0;
                 top: 0;
-                right: -20px;
+                height: 100%;
+
             }
+
+
         }
     }
 
@@ -67,7 +64,7 @@
                     color: var(--tp-primary-color);
                     font-weight: 600;
                     font-size: 16px;
-                    padding: 22px 0;
+                    padding: 21px 0;
 
                 }
 
@@ -114,13 +111,26 @@
         }
     }
 
-    &-right {
-        display: flex;
-        align-items: center;
+    &-right {}
 
+    &-phone {
+        & a {
+            color: #063D30;
+            font-size: 15;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+
+        & svg {
+            margin-right: 5px;
+        }
     }
 
-    // video end in 1.43 mins
+    &-btn {
+        margin-left: 40px;
+    }
+
 
 
 }
